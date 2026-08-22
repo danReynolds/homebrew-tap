@@ -2,11 +2,11 @@
 # next release stop, because rk compares this file to the
 # release it names.
 cask "rk" do
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
-    sha256 "daa865da431a17b96de35e941c348d46fff19cb79ffe4feae952ccd3b31169ae"
-    url "https://github.com/danReynolds/release-kit/releases/download/v0.1.5/rk-0.1.5-macos-arm64.tar.gz"
+    sha256 "cbbca9abfadab92d07060d7689590244b8e39a3fe3c2b1b81a0f23357b60a878"
+    url "https://github.com/danReynolds/release-kit/releases/download/v0.1.6/rk-0.1.6-macos-arm64.tar.gz"
 
     depends_on arch: :arm64
   end
@@ -14,10 +14,10 @@ cask "rk" do
   on_linux do
     arch arm: "arm64", intel: "x64"
 
-    sha256 arm64_linux:  "6552601a55b4ab971e788a9593b51f9ae25d71a6e5c8cbe644478e8a3996bda0",
-           x86_64_linux: "3eef82abbc6bb3f6042da0a8c89cbfa378668144e64205b22f6701e7c91d4fca"
+    sha256 arm64_linux:  "642847851109ec10064ef3d3474de7c3cc32b43d8190218e5673acbe4490a689",
+           x86_64_linux: "c8246174d19e382bee9aaabaf349dc6a46a58bfe69b669b8e7efb6922514f4f4"
 
-    url "https://github.com/danReynolds/release-kit/releases/download/v0.1.5/rk-#{version}-linux-#{arch}.tar.gz"
+    url "https://github.com/danReynolds/release-kit/releases/download/v0.1.6/rk-#{version}-linux-#{arch}.tar.gz"
   end
 
   name "rk"
