@@ -7,23 +7,23 @@
 class Rk < Formula
   desc "Released by rk"
   homepage "https://github.com/danReynolds/release-kit"
-  version "0.1.10"
+  version "0.1.11"
 
   on_macos do
     on_arm do
-      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.10/rk-0.1.10-macos-arm64.tar.gz"
-      sha256 "71fe860212d65805d32d24e69218de33cb02e8d75543863058b1c276ed3955c7"
+      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.11/rk-0.1.11-macos-arm64.tar.gz"
+      sha256 "00780f8606f18d57c041539a8f4aa7f21653a9fdc9da34a47a3f411f2c93382e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.10/rk-0.1.10-linux-arm64.tar.gz"
-      sha256 "2042858f8e3caa48f8a3b151a353c1a9a232d1f52bc9637cb33c946fc29eef9d"
+      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.11/rk-0.1.11-linux-arm64.tar.gz"
+      sha256 "2da5afe68b83618c1a99dbfcd58a00da6272a0b5cb5cc9610449f31a062c0b48"
     end
     on_intel do
-      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.10/rk-0.1.10-linux-x64.tar.gz"
-      sha256 "105b5c2066627565d173aa3f94ef6501a550e3762b557f64468f672819533023"
+      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.11/rk-0.1.11-linux-x64.tar.gz"
+      sha256 "285700f5336fbd4e70d36b0da489941617baefa22907f9140a5fbe48658370a3"
     end
   end
 
