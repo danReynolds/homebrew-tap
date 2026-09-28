@@ -7,25 +7,27 @@
 class Rk < Formula
   desc "Released by rk"
   homepage "https://github.com/danReynolds/release-kit"
-  version "0.1.12"
+  version "0.1.13"
 
   on_macos do
     on_arm do
-      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.12/rk-0.1.12-macos-arm64.tar.gz"
-      sha256 "cbef44a8aa29016ac2de5a5da1b15f7faa265f21054dc5ad91735c6ebbda39d7"
+      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.13/rk-0.1.13-macos-arm64.tar.gz"
+      sha256 "8c7394dae5d9632919b83baa48ed1f7e79faf6391c17f6bf96fa33e08bbc02dc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.12/rk-0.1.12-linux-arm64.tar.gz"
-      sha256 "49a2f42d04c17da0716261ca3cd2d26f0054b98fddf4ffdde2398993563803cb"
+      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.13/rk-0.1.13-linux-arm64.tar.gz"
+      sha256 "770f05e2c9dfebf412e5b2bd2a3c7c827c5a2106cfc8112f53685578a838b1d1"
     end
     on_intel do
-      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.12/rk-0.1.12-linux-x64.tar.gz"
-      sha256 "3950b28ccc3c83cac9007c922b75708082288190d92f6b3f8233fee5aedbedf1"
+      url "https://github.com/danReynolds/release-kit/releases/download/v0.1.13/rk-0.1.13-linux-x64.tar.gz"
+      sha256 "fe5eeb680fbe7aff28b378310fe27f5eec914e3802500c714d146fab71b271ae"
     end
   end
+
+  preserve_rpath
 
   def install
     libexec.install Dir["*"]
