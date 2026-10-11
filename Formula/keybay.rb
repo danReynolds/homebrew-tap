@@ -7,28 +7,33 @@
 class Keybay < Formula
   desc "Released by rk"
   homepage "https://github.com/danReynolds/keybay"
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.1.1/keybay-0.1.1-macos-arm64.tar.gz"
-      sha256 "fd853c64210f62b4c44eba4a0f33e90407dc999a046808857e073a91aa5de2c0"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.2.0/keybay-0.2.0-macos-arm64.tar.gz"
+      sha256 "4918209f8c79a765c9e4da3a72f19ef38a74657c1b46a074cc9181ecee5cd930"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.1.1/keybay-0.1.1-linux-arm64.tar.gz"
-      sha256 "a2f5de819b373dc18a7a323ef3dfa35b78f935a608beb2d9bf725a2ffc6bac9c"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.2.0/keybay-0.2.0-linux-arm64.tar.gz"
+      sha256 "e9ce4b360dcf13e8b6dc6fd0f7d66de31e4ddf9c6cf6360e25b4257fe8e9b5a6"
     end
     on_intel do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.1.1/keybay-0.1.1-linux-x64.tar.gz"
-      sha256 "17da1a843141e7bc19b5585e289974b79b8b7e8a0457e6d6888d97440ca9924f"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.2.0/keybay-0.2.0-linux-x64.tar.gz"
+      sha256 "120c39ae5f97d9f3a10bbacc0a162c9e6d5e78436c571025132cb99a596cee0b"
     end
   end
 
+  preserve_rpath
+
   def install
-    bin.install "keybay"
+    libexec.install Dir["*"]
+    command = libexec/"keybay"
+    command = libexec/"bin/keybay" unless command.file?
+    bin.install_symlink command
   end
 
   test do
