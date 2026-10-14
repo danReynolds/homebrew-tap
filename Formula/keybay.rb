@@ -7,23 +7,23 @@
 class Keybay < Formula
   desc "Released by rk"
   homepage "https://github.com/danReynolds/keybay"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.2.0/keybay-0.2.0-macos-arm64.tar.gz"
-      sha256 "4918209f8c79a765c9e4da3a72f19ef38a74657c1b46a074cc9181ecee5cd930"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.0/keybay-0.3.0-macos-arm64.tar.gz"
+      sha256 "2345e25f45fbb17a8c1b73c4350bb49386446886839bed40218d637cfb42b415"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.2.0/keybay-0.2.0-linux-arm64.tar.gz"
-      sha256 "e9ce4b360dcf13e8b6dc6fd0f7d66de31e4ddf9c6cf6360e25b4257fe8e9b5a6"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.0/keybay-0.3.0-linux-arm64.tar.gz"
+      sha256 "5a07d054f0f7720c81e1c21d780f9e6f19560f5ea0aa33e2020f3bbe8824b8a9"
     end
     on_intel do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.2.0/keybay-0.2.0-linux-x64.tar.gz"
-      sha256 "120c39ae5f97d9f3a10bbacc0a162c9e6d5e78436c571025132cb99a596cee0b"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.0/keybay-0.3.0-linux-x64.tar.gz"
+      sha256 "cc2935e7a139179ed454660817c59a71f1b24bf71646642c613a739f9475c9bf"
     end
   end
 
