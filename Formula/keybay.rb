@@ -5,25 +5,25 @@
 # next release stop, because rk compares this file to the
 # release it names.
 class Keybay < Formula
-  desc "Released by rk"
+  desc "Encrypted local secrets vault that keeps plaintext out of .env files"
   homepage "https://github.com/danReynolds/keybay"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.0/keybay-0.3.0-macos-arm64.tar.gz"
-      sha256 "2345e25f45fbb17a8c1b73c4350bb49386446886839bed40218d637cfb42b415"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.1/keybay-0.3.1-macos-arm64.tar.gz"
+      sha256 "90c0a56e0dcbf4c000187645826332cc60a5029c030ec767eec68f1533deb66d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.0/keybay-0.3.0-linux-arm64.tar.gz"
-      sha256 "5a07d054f0f7720c81e1c21d780f9e6f19560f5ea0aa33e2020f3bbe8824b8a9"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.1/keybay-0.3.1-linux-arm64.tar.gz"
+      sha256 "de0f3002024a98e41cb5c5dab1dc18d3a15b1ecf2da33ea504e8bf5e56b09ac0"
     end
     on_intel do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.0/keybay-0.3.0-linux-x64.tar.gz"
-      sha256 "cc2935e7a139179ed454660817c59a71f1b24bf71646642c613a739f9475c9bf"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.1/keybay-0.3.1-linux-x64.tar.gz"
+      sha256 "3bfdde92883ed9f03d6c0c4a022db807fc6923641467a223b852ce955209c33b"
     end
   end
 
