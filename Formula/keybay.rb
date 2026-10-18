@@ -7,23 +7,23 @@
 class Keybay < Formula
   desc "Encrypted local secrets vault that keeps plaintext out of .env files"
   homepage "https://github.com/danReynolds/keybay"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.1/keybay-0.3.1-macos-arm64.tar.gz"
-      sha256 "90c0a56e0dcbf4c000187645826332cc60a5029c030ec767eec68f1533deb66d"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.2/keybay-0.3.2-macos-arm64.tar.gz"
+      sha256 "8a3caf4fd023750936a77c31ac578726096ed08c582a5ea791d7bfc22d83c585"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.1/keybay-0.3.1-linux-arm64.tar.gz"
-      sha256 "de0f3002024a98e41cb5c5dab1dc18d3a15b1ecf2da33ea504e8bf5e56b09ac0"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.2/keybay-0.3.2-linux-arm64.tar.gz"
+      sha256 "337d738612d6b735cbcdac8c55040b1c26776123042a6b47dc9ec28a369faf55"
     end
     on_intel do
-      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.1/keybay-0.3.1-linux-x64.tar.gz"
-      sha256 "3bfdde92883ed9f03d6c0c4a022db807fc6923641467a223b852ce955209c33b"
+      url "https://github.com/danReynolds/keybay/releases/download/keybay_cli-v0.3.2/keybay-0.3.2-linux-x64.tar.gz"
+      sha256 "4dbfb48dedf87dc43690e07ced7f06576d2d64beaf635ef89ad46ff8b5adc309"
     end
   end
 
